@@ -1,4 +1,5 @@
 FROM resin/rpi-raspbian:jessie
+MAINTAINER Blake Blackshear <blakeb@blakeshome.com>
 
 # remove resin repo
 RUN rm /etc/apt/sources.list.d/resin.list && \
