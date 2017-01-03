@@ -8,7 +8,7 @@ RUN rm /etc/apt/sources.list.d/resin.list && \
 # install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	golang-go libcec-dev cec-utils make git build-essential \
-  libraspberrypi0 libraspberrypi-dev libraspberrypi-doc libraspberrypi-bin
+  libraspberrypi0 libraspberrypi-dev libraspberrypi-bin
 
 ENV GOPATH=/go
 
