@@ -1,3 +1,6 @@
+[![blakeblackshear/rpi-hdmi-cec-rest](https://img.shields.io/docker/stars/blakeblackshear/rpi-hdmi-cec-rest.svg)](https://hub.docker.com/r/blakeblackshear/rpi-hdmi-cec-rest/)
+[![blakeblackshear/rpi-hdmi-cec-rest](https://img.shields.io/docker/pulls/blakeblackshear/rpi-hdmi-cec-rest.svg)](https://hub.docker.com/r/blakeblackshear/rpi-hdmi-cec-rest/)
+
 # Docker image running hdmi-cec-rest for Raspberry Pi
 A REST api for your HDMI CEC devices on port 5000. Runs [this go application](https://github.com/bah2830/hdmi-cec-rest).
 
@@ -9,7 +12,7 @@ docker run -d --name="hdmi-cec-rest" -v /etc/localtime:/etc/localtime:ro --net=h
 
 ## Home Assistant
 I built this to allow [Home Assistant](https://home-assistant.io) to more easily
-talk to devices over HDMI CEC. The native component does not provider a way to
+talk to devices over HDMI CEC. The native component does not provide a way to
 check the status of a device. An example config looks like this, but may vary
 depending on your TV.
 
